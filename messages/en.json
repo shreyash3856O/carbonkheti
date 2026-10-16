@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "language": "English",
+    "script": "Latin",
+    "reviewStatus": "approved",
+    "lastReviewed": "2025-01-01"
+  },
+  "common": {
+    "appName": "CarbonKheti",
+    "tagline": "Factories pay to cut carbon. Farmers get paid to grow it back.",
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "download": "Download",
+    "upload": "Upload",
+    "view": "View",
+    "retry": "Try Again",
+    "close": "Close",
+    "help": "Help",
+    "logout": "Log Out",
+    "readAloud": "Read aloud",
+    "noData": "No data yet",
+    "required": "Required",
+    "optional": "Optional",
+    "rupee": "₹",
+    "tons": "tons of carbon",
+    "acres": "acres",
+    "hectares": "hectares",
+    "or": "or",
+    "and": "and"
+  },
+  "nav": {
+    "home": "Home",
+    "passbook": "My Passbook",
+    "practices": "My Practices",
+    "help": "Help",
+    "profile": "Profile",
+    "marketplace": "Marketplace",
+    "impact": "Impact",
+    "registry": "Public Registry",
+    "admin": "Admin",
+    "farmers": "Farmers",
+    "tasks": "Tasks",
+    "payouts": "Payouts"
+  },
+  "landing": {
+    "heroTitle": "Carbon Credits for Indian Farmers",
+    "heroSubtitle": "Factories pay to cut carbon. Farmers get paid to grow it back.",
+    "iAmFarmer": "I am a Farmer",
+    "iAmCooperative": "I am a Cooperative / FPO",
+    "iAmFactory": "I am a Factory / Buyer",
+    "liveCounters": {
+      "farmersEnrolled": "Farmers enrolled",
+      "tonsCredited": "Tons of carbon credited",
+      "payoutsReleased": "Payouts released",
+      "statesCovered": "States covered"
+    },
+    "emptyState": {
+      "farmersEnrolled": "No farmers enrolled yet",
+      "tonsCredited": "No carbon credited yet",
+      "payoutsReleased": "No payouts released yet"
+    },
+    "about": "What is CarbonKheti?",
+    "aboutText": "CarbonKheti connects smallholder farmers in India with companies that want to fund climate-friendly farming. Farmers who change their practices — like stopping field burning or using less water — earn carbon credits. Companies buy these credits to reduce their climate impact. Every credit is verified and tracked.",
+    "howItWorks": "How It Works",
+    "step1": "Farmers register with their cooperative",
+    "step2": "A field agent records farming practices",
+    "step3": "Evidence is verified by our team",
+    "step4": "Carbon credits are issued to the farmer",
+    "step5": "Companies buy credits, farmers get paid",
+    "benefitSplit": "How earnings are split",
+    "viewBenefitSplit": "View the benefit-split formula",
+    "viewGrievanceProcess": "View grievance process",
+    "footer": {
+      "platform": "Platform v1 — Payments and satellite MRV not live. For testing only.",
+      "dpdp": "Data handled in alignment with India's Digital Personal Data Protection Act. Flagged for legal review.",
+      "ccts": "References India's Carbon Credit Trading Scheme (CCTS) as a compliance note only. No certification claimed.",
+      "contact": "Contact"
+    }
+  },
+  "languagePicker": {
+    "title": "Choose your language",
+    "subtitle": "Pick the language you are most comfortable in",
+    "continue": "Continue in {language}"
+  },
+  "auth": {
+    "loginTitle": "Log in to CarbonKheti",
+    "phoneLabel": "Mobile Number",
+    "phonePlaceholder": "+91 XXXXX XXXXX",
+    "sendOTP": "Send OTP",
+    "otpLabel": "Enter the 6-digit OTP sent to {phone}",
+    "otpPlaceholder": "Enter OTP",
+    "verifyOTP": "Verify OTP",
+    "resendOTP": "Resend OTP",
+    "resendIn": "Resend in {seconds}s",
+    "otpSent": "OTP sent to {phone}",
+    "otpStub": "⚠️ Dev mode: OTP is 123456",
+    "invalidPhone": "Please enter a valid 10-digit Indian mobile number",
+    "invalidOTP": "Invalid or expired OTP. Please try again.",
+    "logout": "Log Out",
+    "agentMode": "Onboarding a farmer? Use Agent Mode",
+    "agentModeLabel": "Agent-assisted onboarding"
+  },
+  "onboarding": {
+    "title": "Register as a Farmer",
+    "step": "Step {current} of {total}",
+    "personalDetails": "Your Details",
+    "name": "Your Full Name",
+    "fatherHusbandName": "Father / Husband Name",
+    "village": "Your Village",
+    "taluka": "Taluka / Block",
+    "district": "District",
+    "state": "State",
+    "landDetails": "Your Land",
+    "addPlot": "Add a Plot",
+    "plotName": "Plot Name (optional, e.g. 'Front field')",
+    "surveyNumber": "Survey / Khasra Number (optional)",
+    "plotArea": "Plot Area",
+    "areaUnit": "Unit",
+    "markBoundary": "Mark Field Boundary",
+    "walkBoundary": "Walk the boundary with GPS",
+    "dropPin": "Drop a pin on the map",
+    "landDocument": "Land Document",
+    "landDocType": "Document Type",
+    "landDocTypes": {
+      "712_extract": "7/12 Extract",
+      "khasra_khatauni": "Khasra / Khatauni",
+      "patta": "Patta"
+    },
+    "uploadDocument": "Upload Document",
+    "baseline": "Past Farming Practices",
+    "baselineDesc": "Tell us how you farmed in the last 3 years. This helps us calculate carbon credits.",
+    "year": "Year",
+    "tillage": "Tillage Practice",
+    "tillageTypes": {
+      "conventional": "Conventional (deep ploughing)",
+      "reduced": "Reduced tillage",
+      "no_till": "No tillage",
+      "minimum": "Minimum tillage"
+    },
+    "fertilizer": "Fertilizer Used",
+    "fertilizerTypes": {
+      "chemical_urea": "Chemical — Urea",
+      "chemical_dap": "Chemical — DAP",
+      "chemical_mixed": "Chemical — Mixed",
+      "organic_compost": "Organic — Compost",
+      "organic_fym": "Organic — Farm Yard Manure",
+      "organic_vermi": "Organic — Vermicompost",
+      "biofertiliser": "Biofertiliser",
+      "none": "None"
+    },
+    "irrigation": "Irrigation Method",
+    "irrigationTypes": {
+      "rainfed": "Rainfed",
+      "flood": "Flood irrigation",
+      "drip": "Drip irrigation",
+      "sprinkler": "Sprinkler",
+      "none": "None"
+    },
+    "residue": "What do you do with crop residue?",
+    "residueTypes": {
+      "burned": "Burn it",
+      "incorporated": "Mix into soil",
+      "retained": "Leave on field",
+      "removed": "Remove and sell/use"
+    },
+    "choosePractice": "Choose a Carbon Practice",
+    "practiceDesc": "Select the farming change you will make this season",
+    "practiceTypes": {
+      "no_till": "No Tillage",
+      "reduced_tillage": "Reduced Tillage",
+      "cover_crops": "Cover Crops",
+      "residue_retention": "Crop Residue Retention",
+      "alternate_wetting_drying": "Alternate Wetting and Drying (Rice)",
+      "agroforestry": "Agroforestry",
+      "boundary_trees": "Boundary Trees"
+    },
+    "additionalityBlocked": "This practice is already part of your recorded history. To earn carbon credits, you must choose a new practice.",
+    "bankDetails": "Payment Details",
+    "bankDetailsDesc": "How should we pay you? Your details are stored securely.",
+    "upiId": "UPI ID",
+    "bankAccount": "Bank Account Number",
+    "ifsc": "IFSC Code",
+    "accountName": "Account Holder Name",
+    "consent": "Your Consent",
+    "consentDesc": "Please read and agree to each item. We will read them aloud if you press the speaker button.",
+    "consentItems": {
+      "data_usage": "I allow CarbonKheti to collect and use my farming data to issue carbon credits.",
+      "payout_terms": "I understand that payouts are released in three stages: at sign-up, mid-season, and at the end of the season.",
+      "cooling_off": "I understand I have a 72-hour cooling-off period after signing up, during which I can cancel without any charge.",
+      "dpdp_notice": "I have been informed that my personal data is protected under India's Digital Personal Data Protection Act. I can request deletion of my data at any time.",
+      "photo_sharing": "I allow my photos to be used on the CarbonKheti platform. (Optional — I can withdraw this anytime.)",
+      "story_sharing": "I allow my story to be shared publicly to show the impact of the program. (Optional — I can withdraw this anytime.)"
+    },
+    "consentOptional": "Optional",
+    "consentRequired": "Required",
+    "consentReadAloud": "Read this aloud",
+    "agentAssisted": "Filling this on behalf of a farmer",
+    "coolingOffNotice": "You have 72 hours to change your mind. After that, you are registered.",
+    "submitRegistration": "Complete Registration",
+    "success": "You are registered!",
+    "successDesc": "Welcome to CarbonKheti. Your passbook starts at ₹0. Earnings will appear once your practices are verified."
+  },
+  "passbook": {
+    "title": "My Carbon Passbook",
+    "totalEarned": "Total Earned",
+    "tonsCredited": "Tons of carbon credited",
+    "nextPayout": "Next Payout",
+    "nextPayoutDate": "Expected by {date}",
+    "payoutHistory": "Payout History",
+    "noPayouts": "No payouts yet. Earnings appear after your first verification.",
+    "stage": {
+      "signup": "Sign-up Bonus",
+      "mid_season": "Mid-season",
+      "final": "End-of-season"
+    },
+    "status": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "paid": "Paid",
+      "failed": "Failed"
+    },
+    "estimateLabel": "Estimated (not guaranteed)",
+    "estimateDisclaimer": "This is an estimate based on your plot size and practice. Actual credits are issued only after verification.",
+    "zeroState": "Your passbook is empty right now. Once your farming practices are verified, your earnings will appear here.",
+    "verificationPending": "Verification in progress",
+    "stampPaid": "PAID"
+  },
+  "practices": {
+    "title": "My Practices",
+    "activePractice": "Active Practice",
+    "practiceChecklist": "Practice Checklist",
+    "addEvidence": "Add Photo Evidence",
+    "capturePhoto": "Capture Photo",
+    "uploadPhoto": "Upload Photo",
+    "geoTagging": "Location will be recorded automatically",
+    "offlineMode": "You are offline. Photos will be saved and uploaded when you have internet.",
+    "photoSaved": "Photo saved on your phone",
+    "photoSynced": "Photo uploaded successfully",
+    "checklistItem": {
+      "no_till": [
+        "Take a photo of the field before sowing",
+        "Show the soil surface (no ploughing marks)",
+        "Photo of seeds being sown directly"
+      ],
+      "cover_crops": [
+        "Photo of cover crop seeds",
+        "Photo of cover crop growing in field",
+        "Photo showing main crop and cover crop together"
+      ],
+      "residue_retention": [
+        "Photo of harvested field with residue left on ground",
+        "Close-up photo of crop residue on soil"
+      ],
+      "alternate_wetting_drying": [
+        "Photo of field showing dry cracks (drying phase)",
+        "Photo of field being re-flooded",
+        "Photo of water level marker in field"
+      ],
+      "agroforestry": [
+        "Photo of trees planted in field",
+        "Photo showing trees and crops together"
+      ],
+      "boundary_trees": [
+        "Photo of boundary trees planted",
+        "Photo showing full boundary with trees"
+      ]
+    }
+  },
+  "help": {
+    "title": "Help",
+    "grievanceTitle": "Submit a Complaint or Question",
+    "grievanceText": "Write your complaint",
+    "grievanceVoice": "Record a voice message",
+    "grievanceSubmit": "Send",
+    "grievanceSuccess": "Your message has been sent. We will respond within 3 working days.",
+    "helpline": "Helpline Number",
+    "helplineNotSet": "Helpline number not yet set up. Please use the form above.",
+    "dataDelete": "Request deletion of my data",
+    "dataDeleteDesc": "To delete your account and data, fill the form and our team will process it within 30 days."
+  },
+  "agent": {
+    "title": "Agent Dashboard",
+    "enrollFarmer": "Enroll New Farmer",
+    "farmerList": "Farmers I've Enrolled",
+    "taskList": "My Tasks",
+    "verificationVisit": "Verification Visit",
+    "uploadEvidence": "Upload Evidence",
+    "noFarmers": "No farmers enrolled yet",
+    "noTasks": "No tasks assigned"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "approvals": "Pending Approvals",
+    "factories": "Factory Buyers",
+    "cooperatives": "Cooperatives",
+    "agents": "Agents",
+    "farmers": "All Farmers",
+    "batches": "Credit Batches",
+    "createBatch": "Create Credit Batch",
+    "payouts": "Payouts",
+    "grievances": "Grievances",
+    "config": "Platform Config",
+    "auditLog": "Audit Log",
+    "benefitSplit": "Benefit Split Formula",
+    "benefitSplitDesc": "This formula is applied publicly and governs how earnings are distributed.",
+    "farmerPct": "Farmer %",
+    "platformPct": "Platform %",
+    "verificationPct": "Verification %",
+    "bufferPct": "Buffer %",
+    "configSaved": "Configuration saved",
+    "approve": "Approve",
+    "reject": "Reject",
+    "suspend": "Suspend",
+    "markPaid": "Mark as Paid",
+    "noApprovals": "No pending approvals",
+    "auditAction": {
+      "create": "Created",
+      "update": "Updated",
+      "delete": "Deleted",
+      "approve": "Approved",
+      "reject": "Rejected",
+      "verify": "Verified",
+      "pay": "Marked Paid"
+    }
+  },
+  "factory": {
+    "title": "Marketplace",
+    "signup": "Register as a Buyer",
+    "companyName": "Company Name",
+    "gstin": "GSTIN",
+    "cin": "CIN",
+    "gstinFormat": "Format: 22AAAAA0000A1Z5",
+    "cinFormat": "Format: U12345AB1234ABC123456",
+    "contactName": "Contact Person Name",
+    "contactEmail": "Contact Email",
+    "industry": "Industry / Sector",
+    "kycDoc": "Upload KYC Document",
+    "pendingApproval": "Your account is under review. Admin will approve within 2 working days.",
+    "browseCredits": "Browse Carbon Credits",
+    "noCredits": "No verified credit batches available yet.",
+    "filters": {
+      "state": "State",
+      "district": "District",
+      "practice": "Practice Type",
+      "crop": "Crop",
+      "vintage": "Vintage Year",
+      "minPrice": "Min Price (₹/ton)",
+      "maxPrice": "Max Price (₹/ton)"
+    },
+    "batch": {
+      "serialRange": "Serial Range",
+      "practice": "Practice",
+      "vintage": "Vintage",
+      "region": "Region",
+      "tons": "Tons available",
+      "pricePerTon": "Price per ton",
+      "coBenefits": "Co-benefits",
+      "requestPurchase": "Request Purchase",
+      "offtakeRequest": "Multi-year Offtake Request",
+      "priceFloor": "Price Floor (₹/ton)"
+    },
+    "order": {
+      "tonsRequested": "Tons requested",
+      "totalAmount": "Total amount",
+      "gstNote": "⚠️ DRAFT — 18% GST applied as placeholder. Legal review required before live.",
+      "invoiceDownload": "Download Draft Invoice",
+      "paymentsNotLive": "⚠️ Payments are not live in v1. Admin will contact you with payment instructions."
+    },
+    "impact": {
+      "title": "Your Impact",
+      "villagesFunded": "Villages funded",
+      "farmersFunded": "Farmers funded",
+      "tonsCredited": "Tons of carbon credited",
+      "practicesSupported": "Practices supported",
+      "farmerNote": "Farmer names and photos shown only with their consent.",
+      "villageAggregate": "Showing village-level data to protect farmer privacy."
+    }
+  },
+  "registry": {
+    "title": "Public Carbon Credit Registry",
+    "subtitle": "All issued credit batches from verified Indian farms",
+    "searchPlaceholder": "Search by serial, region, practice...",
+    "noBatches": "No credit batches have been issued yet.",
+    "columns": {
+      "serialRange": "Serial Range",
+      "region": "Region",
+      "practice": "Practice",
+      "vintage": "Vintage",
+      "status": "Status",
+      "buyer": "Buyer",
+      "tons": "Tons",
+      "verificationStatus": "Verification"
+    },
+    "status": {
+      "draft": "Draft",
+      "active": "Active",
+      "retired": "Retired",
+      "cancelled": "Cancelled"
+    },
+    "buyerOptedOut": "Buyer opted for privacy",
+    "verificationStatus": {
+      "manual": "Manually verified",
+      "satellite": "Satellite verified",
+      "pending": "Pending"
+    }
+  }
+}
