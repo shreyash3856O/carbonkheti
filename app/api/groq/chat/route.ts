@@ -104,10 +104,10 @@ CRITICAL LANGUAGE DIRECTIVE:
       ];
 
       const completion = await groq.chat.completions.create({
-        model: "llama-3.3-70b-versatile",
+        model: "qwen/qwen3.8-27b",
         messages: formattedMessages,
-        temperature: 0.6,
-        max_tokens: 220,
+        temperature: 0.5,
+        max_tokens: 140,
       });
 
       reply = completion.choices[0]?.message?.content || "";

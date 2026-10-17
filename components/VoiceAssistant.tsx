@@ -607,7 +607,7 @@ export default function VoiceAssistant({ currentLocale = "en" }: { currentLocale
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-stone-700">Groq API Key (Local):</span>
                   <span className="text-[10px] bg-stone-200 text-stone-800 px-2 py-0.5 rounded-full font-mono">
-                    LLaMA-3.3-70B Active
+                    Groq LPU Active
                   </span>
                 </div>
                 <div className="flex gap-2">
