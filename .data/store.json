@@ -55,6 +55,13 @@
       "role": "factory_buyer",
       "languagePref": "en",
       "createdAt": "2025-05-10T11:00:00.000Z"
+    },
+    {
+      "id": "b1e809b6-ab67-4ccf-81f4-b2673e56497b",
+      "phone": "+919922992299",
+      "role": "farmer",
+      "languagePref": "en",
+      "createdAt": "2026-10-17T07:33:37.549Z"
     }
   ],
   "farmers": [

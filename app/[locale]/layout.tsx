@@ -208,7 +208,7 @@ export default async function LocaleLayout({
               </div>
             </div>
           </footer>
-          <VoiceAssistant />
+          <VoiceAssistant currentLocale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
