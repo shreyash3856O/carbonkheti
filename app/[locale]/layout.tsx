@@ -6,6 +6,7 @@ import { routing, Locale } from "@/i18n/routing";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import VoiceAssistant from "@/components/VoiceAssistant";
+import MobileNav from "@/components/MobileNav";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -98,11 +99,11 @@ export default async function LocaleLayout({
               </nav>
 
               {/* Right: Language Selector & Access Action */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <LanguageSwitcher currentLocale={locale} />
                 <Link
                   href={`/${locale}/login`}
-                  className="bg-stone-900 hover:bg-black text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-xs transition-all"
+                  className="hidden sm:inline-flex bg-stone-900 hover:bg-black text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-xs transition-all"
                 >
                   {locale === "hi"
                     ? "लॉग इन"
@@ -126,6 +127,19 @@ export default async function LocaleLayout({
                     ? "ലോഗിൻ"
                     : "Sign In"}
                 </Link>
+                <MobileNav
+                  locale={locale}
+                  labels={{
+                    home: t("nav.home") || "Overview",
+                    passbook: t("nav.passbook") || "Farmer Passbook",
+                    agent: t("nav.practices") || "Field Operations",
+                    factory: t("nav.marketplace") || "Factory Marketplace",
+                    registry: t("nav.registry") || "Public Ledger",
+                    admin: t("nav.admin") || "MRV Audit",
+                    login: locale === "hi" ? "लॉग इन (Sign In)" : "Sign In",
+                    helpline: locale === "hi" ? "हेल्पलाइन" : "Helpline",
+                  }}
+                />
               </div>
             </div>
           </header>

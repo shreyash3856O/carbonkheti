@@ -587,32 +587,38 @@ export default function FarmerEarningCalculator({ locale = "en" }: { locale?: st
                 {tr.payoutSchedule}
               </div>
 
-              <div className="grid grid-cols-3 gap-2 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-center">
                 {/* 1st */}
-                <div className="bg-stone-800/80 rounded-lg p-2.5 border border-stone-700">
-                  <div className="text-[10px] text-stone-400">{tr.stage1}</div>
+                <div className="bg-stone-800/80 rounded-lg p-2.5 border border-stone-700 flex sm:flex-col justify-between items-center sm:justify-center">
+                  <div className="text-left sm:text-center">
+                    <div className="text-[10px] text-stone-400">{tr.stage1}</div>
+                    <div className="text-[9px] text-stone-300 mt-0.5">{tr.stage1Sub}</div>
+                  </div>
                   <div className="text-sm sm:text-base font-bold font-mono text-white mt-0.5">
                     ₹{advance20.toLocaleString("en-IN")}
                   </div>
-                  <div className="text-[9px] text-stone-300 mt-0.5">{tr.stage1Sub}</div>
                 </div>
 
                 {/* 2nd */}
-                <div className="bg-stone-800/80 rounded-lg p-2.5 border border-stone-700">
-                  <div className="text-[10px] text-stone-400">{tr.stage2}</div>
+                <div className="bg-stone-800/80 rounded-lg p-2.5 border border-stone-700 flex sm:flex-col justify-between items-center sm:justify-center">
+                  <div className="text-left sm:text-center">
+                    <div className="text-[10px] text-stone-400">{tr.stage2}</div>
+                    <div className="text-[9px] text-stone-300 mt-0.5">{tr.stage2Sub}</div>
+                  </div>
                   <div className="text-sm sm:text-base font-bold font-mono text-white mt-0.5">
                     ₹{midSeason40.toLocaleString("en-IN")}
                   </div>
-                  <div className="text-[9px] text-stone-300 mt-0.5">{tr.stage2Sub}</div>
                 </div>
 
                 {/* 3rd */}
-                <div className="bg-stone-800/80 rounded-lg p-2.5 border border-stone-700">
-                  <div className="text-[10px] text-stone-400">{tr.stage3}</div>
+                <div className="bg-stone-800/80 rounded-lg p-2.5 border border-stone-700 flex sm:flex-col justify-between items-center sm:justify-center">
+                  <div className="text-left sm:text-center">
+                    <div className="text-[10px] text-stone-400">{tr.stage3}</div>
+                    <div className="text-[9px] text-stone-300 mt-0.5">{tr.stage3Sub}</div>
+                  </div>
                   <div className="text-sm sm:text-base font-bold font-mono text-white mt-0.5">
                     ₹{harvest40.toLocaleString("en-IN")}
                   </div>
-                  <div className="text-[9px] text-stone-300 mt-0.5">{tr.stage3Sub}</div>
                 </div>
               </div>
             </div>

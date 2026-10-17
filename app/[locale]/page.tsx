@@ -825,21 +825,21 @@ export default async function LandingPage({
                 </Link>
               </div>
 
-              {/* Direct Statistics Ribbon */}
-              <div className="pt-6 border-t border-stone-200 grid grid-cols-3 gap-4">
-                <div>
+              {/* Direct Statistics Ribbon - Fully Responsive on Mobile */}
+              <div className="pt-6 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div className="bg-stone-50 sm:bg-transparent p-3 sm:p-0 rounded-xl border border-stone-200 sm:border-0">
                   <div className="text-[11px] text-stone-500 font-medium">{lt.tonsLabel}</div>
                   <div className="text-xl sm:text-2xl font-bold font-mono text-stone-900 mt-0.5">
                     {stats.tonsCredited.toLocaleString("en-IN")} <span className="text-xs text-stone-500 font-sans">{lt.tonsUnit}</span>
                   </div>
                 </div>
-                <div>
+                <div className="bg-stone-50 sm:bg-transparent p-3 sm:p-0 rounded-xl border border-stone-200 sm:border-0">
                   <div className="text-[11px] text-stone-500 font-medium">{lt.payoutsLabel}</div>
                   <div className="text-xl sm:text-2xl font-bold font-mono text-stone-900 mt-0.5">
                     ₹{stats.payoutsReleasedInr.toLocaleString("en-IN")}
                   </div>
                 </div>
-                <div>
+                <div className="bg-stone-50 sm:bg-transparent p-3 sm:p-0 rounded-xl border border-stone-200 sm:border-0">
                   <div className="text-[11px] text-stone-500 font-medium">{lt.farmersLabel}</div>
                   <div className="text-xl sm:text-2xl font-bold font-mono text-stone-900 mt-0.5">
                     {stats.farmersEnrolled.toLocaleString("en-IN")}
@@ -848,44 +848,77 @@ export default async function LandingPage({
               </div>
             </div>
 
-            {/* Right 5 Cols: Clean, Fast Graphic Card */}
-            <div className="lg:col-span-5 bg-stone-50 rounded-2xl p-6 sm:p-7 border border-stone-200 space-y-4">
+            {/* Right 5 Cols: Pixelated 3D Farmer Mining at Farm Showcase Card */}
+            <div className="lg:col-span-5 bg-stone-50 rounded-2xl p-4 sm:p-6 border border-stone-200 space-y-4 shadow-xs">
               <div className="flex items-center justify-between pb-3 border-b border-stone-200">
-                <span className="text-xs font-bold text-stone-800 uppercase tracking-wide">
-                  {lt.cardSys}
-                </span>
-                <span className="text-[11px] font-semibold bg-stone-200 text-stone-800 px-2 py-0.5 rounded">
-                  {lt.cardSys100}
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-stone-900 animate-ping" />
+                  <span className="text-xs font-bold text-stone-900 uppercase tracking-wide">
+                    {lt.cardSys}
+                  </span>
+                </div>
+                <span className="text-[11px] font-semibold bg-stone-200 text-stone-800 px-2.5 py-0.5 rounded-full">
+                  ⛏️ Mining Carbon
                 </span>
               </div>
 
-              <div className="space-y-3">
-                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200">
+              {/* Pixelated 3D Farmer Mining Showcase Frame */}
+              <div className="relative rounded-xl overflow-hidden border border-stone-300 bg-white group shadow-xs">
+                <img
+                  src="/images/pixel-farmer-mining.jpg"
+                  alt="3D Pixelated Indian Farmer Mining Carbon Crystals in Farm"
+                  className="w-full h-56 sm:h-64 object-cover object-center group-hover:scale-102 transition-transform duration-300"
+                />
+                
+                {/* Live Mining HUD Overlay */}
+                <div className="absolute top-2.5 left-2.5 bg-stone-950/85 backdrop-blur-xs text-white text-[10px] font-mono font-bold px-2.5 py-1 rounded-md border border-stone-700/60 flex items-center gap-1.5 shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>3D FARM MINER • ACTIVE</span>
+                </div>
+
+                <div className="absolute bottom-2.5 inset-x-2.5 bg-stone-950/85 backdrop-blur-xs text-white p-2.5 rounded-lg border border-stone-700/60 flex items-center justify-between shadow-sm">
+                  <div>
+                    <div className="text-[11px] font-bold text-stone-100">
+                      खेती = कार्बन माइनिंग (Farm Mining)
+                    </div>
+                    <div className="text-[9px] text-stone-300">
+                      मिट्टी में कार्बन जमा करें • ₹1,500 - ₹4,000 / एकड़
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-mono font-bold bg-white text-stone-900 px-2 py-0.5 rounded">
+                    +2.8 tCO₂e
+                  </span>
+                </div>
+              </div>
+
+              {/* 3 Step Values */}
+              <div className="space-y-2.5">
+                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 shadow-2xs">
                   <span className="text-2xl">🌾</span>
                   <div>
                     <div className="text-xs font-bold text-stone-900">{lt.card1Title}</div>
-                    <div className="text-[11px] text-stone-500">{lt.card1Sub}</div>
+                    <div className="text-[11px] text-stone-500 leading-tight">{lt.card1Sub}</div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200">
+                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 shadow-2xs">
                   <span className="text-2xl">📸</span>
                   <div>
                     <div className="text-xs font-bold text-stone-900">{lt.card2Title}</div>
-                    <div className="text-[11px] text-stone-500">{lt.card2Sub}</div>
+                    <div className="text-[11px] text-stone-500 leading-tight">{lt.card2Sub}</div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200">
+                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 shadow-2xs">
                   <span className="text-2xl">🏦</span>
                   <div>
                     <div className="text-xs font-bold text-stone-900">{lt.card3Title}</div>
-                    <div className="text-[11px] text-stone-500">{lt.card3Sub}</div>
+                    <div className="text-[11px] text-stone-500 leading-tight">{lt.card3Sub}</div>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-2 text-center text-xs text-stone-500">
+              <div className="pt-1 text-center text-xs text-stone-500">
                 {lt.helpline}
               </div>
             </div>
