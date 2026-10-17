@@ -38,6 +38,9 @@ yarn-error.log*
 .data/*
 !.data/store.json
 
+# scratch
+scratch/
+
 # vercel
 .vercel
 

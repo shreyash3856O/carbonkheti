@@ -848,78 +848,24 @@ export default async function LandingPage({
               </div>
             </div>
 
-            {/* Right 5 Cols: Pixelated 3D Farmer Mining at Farm Showcase Card */}
-            <div className="lg:col-span-5 bg-stone-50 rounded-2xl p-4 sm:p-6 border border-stone-200 space-y-4 shadow-xs">
-              <div className="flex items-center justify-between pb-3 border-b border-stone-200">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-stone-900 animate-ping" />
-                  <span className="text-xs font-bold text-stone-900 uppercase tracking-wide">
-                    {lt.cardSys}
-                  </span>
-                </div>
-                <span className="text-[11px] font-semibold bg-stone-200 text-stone-800 px-2.5 py-0.5 rounded-full">
-                  ⛏️ Mining Carbon
-                </span>
-              </div>
-
-              {/* Pixelated 3D Farmer Mining Showcase Frame */}
-              <div className="relative rounded-xl overflow-hidden border border-stone-300 bg-white group shadow-xs">
-                <img
-                  src="/images/pixel-farmer-mining.jpg"
-                  alt="3D Pixelated Indian Farmer Mining Carbon Crystals in Farm"
-                  className="w-full h-56 sm:h-64 object-cover object-center group-hover:scale-102 transition-transform duration-300"
-                />
-                
-                {/* Live Mining HUD Overlay */}
-                <div className="absolute top-2.5 left-2.5 bg-stone-950/85 backdrop-blur-xs text-white text-[10px] font-mono font-bold px-2.5 py-1 rounded-md border border-stone-700/60 flex items-center gap-1.5 shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>3D FARM MINER • ACTIVE</span>
-                </div>
-
-                <div className="absolute bottom-2.5 inset-x-2.5 bg-stone-950/85 backdrop-blur-xs text-white p-2.5 rounded-lg border border-stone-700/60 flex items-center justify-between shadow-sm">
-                  <div>
-                    <div className="text-[11px] font-bold text-stone-100">
-                      खेती = कार्बन माइनिंग (Farm Mining)
-                    </div>
-                    <div className="text-[9px] text-stone-300">
-                      मिट्टी में कार्बन जमा करें • ₹1,500 - ₹4,000 / एकड़
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-mono font-bold bg-white text-stone-900 px-2 py-0.5 rounded">
-                    +2.8 tCO₂e
-                  </span>
-                </div>
-              </div>
-
-              {/* 3 Step Values */}
-              <div className="space-y-2.5">
-                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 shadow-2xs">
-                  <span className="text-2xl">🌾</span>
-                  <div>
-                    <div className="text-xs font-bold text-stone-900">{lt.card1Title}</div>
-                    <div className="text-[11px] text-stone-500 leading-tight">{lt.card1Sub}</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 shadow-2xs">
-                  <span className="text-2xl">📸</span>
-                  <div>
-                    <div className="text-xs font-bold text-stone-900">{lt.card2Title}</div>
-                    <div className="text-[11px] text-stone-500 leading-tight">{lt.card2Sub}</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 shadow-2xs">
-                  <span className="text-2xl">🏦</span>
-                  <div>
-                    <div className="text-xs font-bold text-stone-900">{lt.card3Title}</div>
-                    <div className="text-[11px] text-stone-500 leading-tight">{lt.card3Sub}</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-1 text-center text-xs text-stone-500">
-                {lt.helpline}
+            {/* Right 5 Cols: Playing 3D Pixelated Farmer Mining */}
+            <div className="lg:col-span-5 flex items-center justify-center">
+              <div className="w-full relative rounded-2xl overflow-hidden border border-stone-200 bg-stone-100 shadow-sm aspect-square max-w-md lg:max-w-none">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster="/images/pixel-farmer-mining.webp"
+                  className="w-full h-full object-cover object-center"
+                >
+                  <source src="/images/pixel-farmer-mining.mp4" type="video/mp4" />
+                  <img
+                    src="/images/pixel-farmer-mining.webp"
+                    alt="Pixelated 3D Farmer Mining at Farm"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </video>
               </div>
             </div>
           </div>
