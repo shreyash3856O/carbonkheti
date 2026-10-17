@@ -1,0 +1,861 @@
+{
+  "users": [
+    {
+      "id": "user-mh-01",
+      "phone": "9822145678",
+      "role": "farmer",
+      "languagePref": "mr",
+      "createdAt": "2025-06-15T09:30:00.000Z"
+    },
+    {
+      "id": "user-pb-02",
+      "phone": "9876512340",
+      "role": "farmer",
+      "languagePref": "pa",
+      "createdAt": "2025-06-18T10:15:00.000Z"
+    },
+    {
+      "id": "user-gj-03",
+      "phone": "9426098765",
+      "role": "farmer",
+      "languagePref": "gu",
+      "createdAt": "2025-06-20T11:00:00.000Z"
+    },
+    {
+      "id": "user-ap-04",
+      "phone": "9848011223",
+      "role": "farmer",
+      "languagePref": "te",
+      "createdAt": "2025-06-22T08:45:00.000Z"
+    },
+    {
+      "id": "user-tn-05",
+      "phone": "9443155667",
+      "role": "farmer",
+      "languagePref": "ta",
+      "createdAt": "2025-06-25T14:20:00.000Z"
+    },
+    {
+      "id": "user-up-06",
+      "phone": "9415088990",
+      "role": "farmer",
+      "languagePref": "hi",
+      "createdAt": "2025-06-28T16:00:00.000Z"
+    },
+    {
+      "id": "agent-01",
+      "phone": "9820011111",
+      "role": "agent",
+      "languagePref": "mr",
+      "createdAt": "2025-05-01T10:00:00.000Z"
+    },
+    {
+      "id": "buyer-01",
+      "phone": "9988002233",
+      "role": "factory_buyer",
+      "languagePref": "en",
+      "createdAt": "2025-05-10T11:00:00.000Z"
+    }
+  ],
+  "farmers": [
+    {
+      "id": "farmer-mh-01",
+      "userId": "user-mh-01",
+      "nameLocal": "रमेश तुकाराम पवार",
+      "nameEn": "Ramesh Tukaram Pawar",
+      "phone": "9822145678",
+      "stateId": 1,
+      "districtId": 101,
+      "taluka": "Ralegaon",
+      "villageName": "Hiware",
+      "upiId": "ramesh.pawar@okhdfcbank",
+      "bankAccountMasked": "SBI •••• 8421",
+      "ifscCode": "SBIN0001234",
+      "enrolledByAgentId": "agent-01",
+      "photoConsentGranted": true,
+      "storyText": "शून्य जुताई व बायोचार वापरामुळे दुष्काळातही कापूस व सोयाबीन पिकाची आर्द्रता टिकून राहिली आणि खताचा खर्च 30% वाचला.",
+      "storyConsentGranted": true,
+      "coolingOffEndsAt": "2025-07-05T09:30:00.000Z",
+      "kycStatus": "approved",
+      "createdAt": "2025-06-15T09:30:00.000Z"
+    },
+    {
+      "id": "farmer-pb-02",
+      "userId": "user-pb-02",
+      "nameLocal": "ਗੁਰਪ੍ਰੀਤ ਸਿੰਘ ਸੰਧੂ",
+      "nameEn": "Gurpreet Singh Sandhu",
+      "phone": "9876512340",
+      "stateId": 2,
+      "districtId": 201,
+      "taluka": "Jagraon",
+      "villageName": "Bhundri",
+      "upiId": "gurpreet.sandhu@upi",
+      "bankAccountMasked": "PNB •••• 3914",
+      "ifscCode": "PUNB0123400",
+      "enrolledByAgentId": "agent-01",
+      "photoConsentGranted": true,
+      "storyText": "ਹੈਪੀ ਸੀਡਰ ਨਾਲ ਪਰਾਲੀ ਨੂੰ ਖੇਤ ਵਿੱਚ ਹੀ ਮਿਲਾ ਕੇ ਕਣਕ ਦੀ ਬਿਜਾਈ ਕੀਤੀ। ਧੂੰਏਂ ਤੋਂ ਛੁਟਕਾਰਾ ਮਿਲਿਆ ਅਤੇ ਕਾਰਬਨ ਕ੍ਰੈਡਿਟ ਦੇ ਪੈਸੇ ਸਿੱਧੇ ਬੈਂਕ ਵਿੱਚ ਆਏ।",
+      "storyConsentGranted": true,
+      "coolingOffEndsAt": "2025-07-08T10:15:00.000Z",
+      "kycStatus": "approved",
+      "createdAt": "2025-06-18T10:15:00.000Z"
+    },
+    {
+      "id": "farmer-gj-03",
+      "userId": "user-gj-03",
+      "nameLocal": "સવિતાબેન જશભાઈ પટેલ",
+      "nameEn": "Savitaben Jashbhai Patel",
+      "phone": "9426098765",
+      "stateId": 4,
+      "districtId": 401,
+      "taluka": "Anand",
+      "villageName": "Borsad",
+      "upiId": "savitaben.patel@okaxis",
+      "bankAccountMasked": "BOB •••• 6201",
+      "ifscCode": "BARB0BORSAD",
+      "enrolledByAgentId": "agent-01",
+      "photoConsentGranted": true,
+      "storyText": "ગોબર ગેસ સ્લરી અને બાયોચાર ખાતર વાપરીને તમાકુ અને શાકભાજીની ગુણવત્તા સુધારી અને કાર્બન કમાણી સીધી જમા થઈ.",
+      "storyConsentGranted": true,
+      "coolingOffEndsAt": "2025-07-10T11:00:00.000Z",
+      "kycStatus": "approved",
+      "createdAt": "2025-06-20T11:00:00.000Z"
+    },
+    {
+      "id": "farmer-ap-04",
+      "userId": "user-ap-04",
+      "nameLocal": "నారాయణ మూర్తి",
+      "nameEn": "Narayana Murthy",
+      "phone": "9848011223",
+      "stateId": 8,
+      "districtId": 801,
+      "taluka": "Tenali",
+      "villageName": "Kollipara",
+      "upiId": "nmurthy@okicici",
+      "bankAccountMasked": "UBI •••• 7183",
+      "ifscCode": "UBIN0531234",
+      "enrolledByAgentId": "agent-01",
+      "photoConsentGranted": true,
+      "storyText": "వరి సాగులో AWD విధానం ద్వారా నీటి వినియోగం తగ్గించాం మరియు కార్బన్ ప్రోత్సాహకం నేరుగా ఖాతాలో అందుకున్నాం.",
+      "storyConsentGranted": true,
+      "coolingOffEndsAt": "2025-07-12T08:45:00.000Z",
+      "kycStatus": "approved",
+      "createdAt": "2025-06-22T08:45:00.000Z"
+    },
+    {
+      "id": "farmer-tn-05",
+      "userId": "user-tn-05",
+      "nameLocal": "முத்துகுமார் ராமசாமி",
+      "nameEn": "Muthukumar Ramasamy",
+      "phone": "9443155667",
+      "stateId": 10,
+      "districtId": 1001,
+      "taluka": "Papanasam",
+      "villageName": "Ammapettai",
+      "upiId": "muthu.cauvery@upi",
+      "bankAccountMasked": "IOB •••• 9012",
+      "ifscCode": "IOBA0000456",
+      "enrolledByAgentId": "agent-01",
+      "photoConsentGranted": true,
+      "storyText": "வயல் வரப்புகளில் வேப்ப மரங்கள் நட்டு மண் அரிப்பை தடுத்து கார்பன் வரவு பெற்றேன்.",
+      "storyConsentGranted": true,
+      "coolingOffEndsAt": "2025-07-15T14:20:00.000Z",
+      "kycStatus": "approved",
+      "createdAt": "2025-06-25T14:20:00.000Z"
+    },
+    {
+      "id": "farmer-up-06",
+      "userId": "user-up-06",
+      "nameLocal": "राजेश कुमार वर्मा",
+      "nameEn": "Rajesh Kumar Verma",
+      "phone": "9415088990",
+      "stateId": 6,
+      "districtId": 601,
+      "taluka": "Pindra",
+      "villageName": "Mangari",
+      "upiId": "rajeshverma@paytm",
+      "bankAccountMasked": "BOI •••• 4429",
+      "ifscCode": "BKID0006789",
+      "enrolledByAgentId": "agent-01",
+      "photoConsentGranted": true,
+      "storyText": "धान की सीधी बुवाई (DSR) और हरी खाद से पानी और डीजल की बचत हुई और कार्बनखेती से सीधा नकद लाभ मिला।",
+      "storyConsentGranted": true,
+      "coolingOffEndsAt": "2025-07-18T16:00:00.000Z",
+      "kycStatus": "approved",
+      "createdAt": "2025-06-28T16:00:00.000Z"
+    }
+  ],
+  "plots": [
+    {
+      "id": "plot-mh-01",
+      "farmerId": "farmer-mh-01",
+      "plotName": "Ralegaon Shivar Parcel 1",
+      "surveyNumber": "142/2A",
+      "areaAcres": 3.5,
+      "areaValue": 3.5,
+      "areaUnit": "acres",
+      "centerLat": 20.4167,
+      "centerLng": 78.5333,
+      "createdAt": "2025-06-15T09:40:00.000Z"
+    },
+    {
+      "id": "plot-pb-02",
+      "farmerId": "farmer-pb-02",
+      "plotName": "Bhundri Canal Block",
+      "surveyNumber": "88/1B",
+      "areaAcres": 5,
+      "areaValue": 5,
+      "areaUnit": "acres",
+      "centerLat": 30.901,
+      "centerLng": 75.8573,
+      "createdAt": "2025-06-18T10:30:00.000Z"
+    },
+    {
+      "id": "plot-gj-03",
+      "farmerId": "farmer-gj-03",
+      "plotName": "Borsad Dairy Farm Parcel",
+      "surveyNumber": "312/A",
+      "areaAcres": 2.5,
+      "areaValue": 2.5,
+      "areaUnit": "acres",
+      "centerLat": 22.4117,
+      "centerLng": 72.9014,
+      "createdAt": "2025-06-20T11:15:00.000Z"
+    },
+    {
+      "id": "plot-ap-04",
+      "farmerId": "farmer-ap-04",
+      "plotName": "Krishna Delta Paddy Field",
+      "surveyNumber": "77/3",
+      "areaAcres": 4,
+      "areaValue": 4,
+      "areaUnit": "acres",
+      "centerLat": 16.2428,
+      "centerLng": 80.6436,
+      "createdAt": "2025-06-22T09:00:00.000Z"
+    },
+    {
+      "id": "plot-tn-05",
+      "farmerId": "farmer-tn-05",
+      "plotName": "Cauvery North Bund Plot",
+      "surveyNumber": "204/5",
+      "areaAcres": 3,
+      "areaValue": 3,
+      "areaUnit": "acres",
+      "centerLat": 10.787,
+      "centerLng": 79.1378,
+      "createdAt": "2025-06-25T14:35:00.000Z"
+    },
+    {
+      "id": "plot-up-06",
+      "farmerId": "farmer-up-06",
+      "plotName": "Varanasi Gangetic Plain Plot",
+      "surveyNumber": "19/4",
+      "areaAcres": 3.2,
+      "areaValue": 3.2,
+      "areaUnit": "acres",
+      "centerLat": 25.3176,
+      "centerLng": 82.9739,
+      "createdAt": "2025-06-28T16:15:00.000Z"
+    }
+  ],
+  "baselines": [
+    {
+      "id": "base-mh-01",
+      "plotId": "plot-mh-01",
+      "year": 2024,
+      "tillagePractice": "conventional_ploughing",
+      "residuePractice": "burned",
+      "fertilizerType": "chemical_dap_urea",
+      "irrigationType": "rainfed",
+      "cropId": 3,
+      "recordedByUserId": "agent-01",
+      "createdAt": "2025-06-15T09:45:00.000Z"
+    },
+    {
+      "id": "base-pb-02",
+      "plotId": "plot-pb-02",
+      "year": 2024,
+      "tillagePractice": "multiple_disc_harrow",
+      "residuePractice": "open_field_burned",
+      "fertilizerType": "high_nitrogen_urea",
+      "irrigationType": "tube_well_flood",
+      "cropId": 1,
+      "recordedByUserId": "agent-01",
+      "createdAt": "2025-06-18T10:35:00.000Z"
+    },
+    {
+      "id": "base-gj-03",
+      "plotId": "plot-gj-03",
+      "year": 2024,
+      "tillagePractice": "conventional",
+      "residuePractice": "removed",
+      "fertilizerType": "chemical_urea",
+      "irrigationType": "canal_flood",
+      "cropId": 4,
+      "recordedByUserId": "agent-01",
+      "createdAt": "2025-06-20T11:20:00.000Z"
+    },
+    {
+      "id": "base-ap-04",
+      "plotId": "plot-ap-04",
+      "year": 2024,
+      "tillagePractice": "puddling_flood",
+      "residuePractice": "burned",
+      "fertilizerType": "chemical_urea",
+      "irrigationType": "continuous_flooding",
+      "cropId": 1,
+      "recordedByUserId": "agent-01",
+      "createdAt": "2025-06-22T09:10:00.000Z"
+    },
+    {
+      "id": "base-tn-05",
+      "plotId": "plot-tn-05",
+      "year": 2024,
+      "tillagePractice": "conventional",
+      "residuePractice": "removed",
+      "fertilizerType": "chemical",
+      "irrigationType": "canal_flood",
+      "cropId": 1,
+      "recordedByUserId": "agent-01",
+      "createdAt": "2025-06-25T14:40:00.000Z"
+    },
+    {
+      "id": "base-up-06",
+      "plotId": "plot-up-06",
+      "year": 2024,
+      "tillagePractice": "conventional",
+      "residuePractice": "burned",
+      "fertilizerType": "chemical_urea",
+      "irrigationType": "flood",
+      "cropId": 2,
+      "recordedByUserId": "agent-01",
+      "createdAt": "2025-06-28T16:20:00.000Z"
+    }
+  ],
+  "practices": [
+    {
+      "id": "prac-mh-01",
+      "farmerId": "farmer-mh-01",
+      "plotId": "plot-mh-01",
+      "practiceType": "no_till",
+      "seasonYear": 2025,
+      "seasonLabel": "Kharif 2025",
+      "cropId": 3,
+      "status": "approved",
+      "additionalityPassed": true,
+      "additionalityNote": "Zero-till coulter planter introduced. Completely replaced conventional ploughing.",
+      "createdAt": "2025-06-15T09:50:00.000Z"
+    },
+    {
+      "id": "prac-pb-02",
+      "farmerId": "farmer-pb-02",
+      "plotId": "plot-pb-02",
+      "practiceType": "residue_retention",
+      "seasonYear": 2025,
+      "seasonLabel": "Rabi 2024-25",
+      "cropId": 2,
+      "status": "approved",
+      "additionalityPassed": true,
+      "additionalityNote": "Happy Seeder utilized across 5.0 acres without any open-air field burning.",
+      "createdAt": "2025-06-18T10:40:00.000Z"
+    },
+    {
+      "id": "prac-gj-03",
+      "farmerId": "farmer-gj-03",
+      "plotId": "plot-gj-03",
+      "practiceType": "biochar",
+      "seasonYear": 2025,
+      "seasonLabel": "Kharif 2025",
+      "cropId": 4,
+      "status": "approved",
+      "additionalityPassed": true,
+      "additionalityNote": "Applied 2.5 t/acre pyrolyzed biomass biochar certified under Indian bio-stimulant standard.",
+      "createdAt": "2025-06-20T11:25:00.000Z"
+    },
+    {
+      "id": "prac-ap-04",
+      "farmerId": "farmer-ap-04",
+      "plotId": "plot-ap-04",
+      "practiceType": "alternate_wetting_drying",
+      "seasonYear": 2025,
+      "seasonLabel": "Kharif 2025",
+      "cropId": 1,
+      "status": "approved",
+      "additionalityPassed": true,
+      "additionalityNote": "Field pani-pipe tube installed. Aeration cycles confirmed via Sentinel-1 SAR radar.",
+      "createdAt": "2025-06-22T09:15:00.000Z"
+    },
+    {
+      "id": "prac-tn-05",
+      "farmerId": "farmer-tn-05",
+      "plotId": "plot-tn-05",
+      "practiceType": "boundary_trees",
+      "seasonYear": 2025,
+      "seasonLabel": "Annual 2025",
+      "cropId": 1,
+      "status": "approved",
+      "additionalityPassed": true,
+      "additionalityNote": "85 native neem and teak saplings planted on perimeter bunds with GPS coordinates.",
+      "createdAt": "2025-06-25T14:45:00.000Z"
+    },
+    {
+      "id": "prac-up-06",
+      "farmerId": "farmer-up-06",
+      "plotId": "plot-up-06",
+      "practiceType": "cover_crops",
+      "seasonYear": 2025,
+      "seasonLabel": "Zaid 2025",
+      "cropId": 7,
+      "status": "approved",
+      "additionalityPassed": true,
+      "additionalityNote": "Dhaincha (Sesbania) green manure cover crop grown and incorporated into soil.",
+      "createdAt": "2025-06-28T16:25:00.000Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-mh-01",
+      "practiceId": "prac-mh-01",
+      "fileUrl": "/evidence/yavatmal_zero_till_canopy.jpg",
+      "fileHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "geoLat": 20.4168,
+      "geoLng": 78.5335,
+      "capturedAt": "2025-08-10T11:20:00.000Z",
+      "capturedByUserId": "agent-01",
+      "gpsInsidePlot": true,
+      "isDuplicateHash": false,
+      "status": "verified",
+      "notes": "High residue mulch cover verified across survey number 142/2A. Moisture retention confirmed.",
+      "createdAt": "2025-08-10T11:25:00.000Z"
+    },
+    {
+      "id": "ev-pb-02",
+      "practiceId": "prac-pb-02",
+      "fileUrl": "/evidence/ludhiana_happy_seeder_mulch.jpg",
+      "fileHash": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4",
+      "geoLat": 30.9012,
+      "geoLng": 75.8575,
+      "capturedAt": "2025-11-20T14:15:00.000Z",
+      "capturedByUserId": "agent-01",
+      "gpsInsidePlot": true,
+      "isDuplicateHash": false,
+      "status": "verified",
+      "notes": "Paddy stubble mulch layer evenly distributed. MODIS thermal fire absence confirmed.",
+      "createdAt": "2025-11-20T14:20:00.000Z"
+    },
+    {
+      "id": "ev-gj-03",
+      "practiceId": "prac-gj-03",
+      "fileUrl": "/evidence/anand_biochar_incorporation.jpg",
+      "fileHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "geoLat": 22.4119,
+      "geoLng": 72.9016,
+      "capturedAt": "2025-07-25T10:00:00.000Z",
+      "capturedByUserId": "agent-01",
+      "gpsInsidePlot": true,
+      "isDuplicateHash": false,
+      "status": "verified",
+      "notes": "Organic carbon soil amendment lab test verified. SOC increased from 0.42% to 0.68%.",
+      "createdAt": "2025-07-25T10:05:00.000Z"
+    },
+    {
+      "id": "ev-ap-04",
+      "practiceId": "prac-ap-04",
+      "fileUrl": "/evidence/guntur_pani_pipe_sensor.jpg",
+      "fileHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "geoLat": 16.243,
+      "geoLng": 80.6438,
+      "capturedAt": "2025-09-05T16:30:00.000Z",
+      "capturedByUserId": "agent-01",
+      "gpsInsidePlot": true,
+      "isDuplicateHash": false,
+      "status": "verified",
+      "notes": "Perforated field tube water level readings match alternate drying intervals.",
+      "createdAt": "2025-09-05T16:35:00.000Z"
+    }
+  ],
+  "creditBatches": [
+    {
+      "id": "batch-ck-mh-2025-001",
+      "serialPrefix": "IN-CCTS-2025-AGR-MH",
+      "startSerial": 100001,
+      "endSerial": 101200,
+      "practiceType": "no_till",
+      "vintageYear": 2025,
+      "stateId": 1,
+      "districtId": 101,
+      "totalTons": 1200,
+      "availableTons": 400,
+      "pricePerTonInr": 180000,
+      "status": "active",
+      "cctsNote": "Bureau of Energy Efficiency (BEE) CCTS Article 6 Compliant Agricultural Soil Carbon Batch.",
+      "plotIds": [
+        "plot-mh-01"
+      ],
+      "createdByUserId": "agent-01",
+      "createdAt": "2025-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "batch-ck-pb-2025-002",
+      "serialPrefix": "IN-CCTS-2025-AGR-PB",
+      "startSerial": 200001,
+      "endSerial": 202400,
+      "practiceType": "residue_retention",
+      "vintageYear": 2025,
+      "stateId": 2,
+      "districtId": 201,
+      "totalTons": 2400,
+      "availableTons": 900,
+      "pricePerTonInr": 195000,
+      "status": "active",
+      "cctsNote": "Indo-Gangetic Basin Stubble Combustion Avoidance Batch with Satellite Thermal Fire Audit.",
+      "plotIds": [
+        "plot-pb-02"
+      ],
+      "createdByUserId": "agent-01",
+      "createdAt": "2025-10-01T11:00:00.000Z"
+    },
+    {
+      "id": "batch-ck-gj-2025-003",
+      "serialPrefix": "IN-CCTS-2025-AGR-GJ",
+      "startSerial": 300001,
+      "endSerial": 300950,
+      "practiceType": "biochar",
+      "vintageYear": 2025,
+      "stateId": 4,
+      "districtId": 401,
+      "totalTons": 950,
+      "availableTons": 350,
+      "pricePerTonInr": 220000,
+      "status": "active",
+      "cctsNote": "High-permanence recalcitrant organic biochar carbon sequestration batch.",
+      "plotIds": [
+        "plot-gj-03"
+      ],
+      "createdByUserId": "agent-01",
+      "createdAt": "2025-10-15T12:00:00.000Z"
+    },
+    {
+      "id": "batch-ck-ap-2025-004",
+      "serialPrefix": "IN-CCTS-2025-AGR-AP",
+      "startSerial": 400001,
+      "endSerial": 401600,
+      "practiceType": "alternate_wetting_drying",
+      "vintageYear": 2025,
+      "stateId": 8,
+      "districtId": 801,
+      "totalTons": 1600,
+      "availableTons": 600,
+      "pricePerTonInr": 185000,
+      "status": "active",
+      "cctsNote": "Krishna-Godavari Basin Paddy Methane (CH4) Avoidance Protocol Batch.",
+      "plotIds": [
+        "plot-ap-04"
+      ],
+      "createdByUserId": "agent-01",
+      "createdAt": "2025-11-01T09:00:00.000Z"
+    }
+  ],
+  "credits": [
+    {
+      "serialNumber": "IN-CCTS-2025-AGR-MH-100001",
+      "batchId": "batch-ck-mh-2025-001",
+      "status": "retired",
+      "retiredByOrderId": "order-tata-01",
+      "createdAt": "2025-09-01T10:00:00.000Z"
+    },
+    {
+      "serialNumber": "IN-CCTS-2025-AGR-MH-100002",
+      "batchId": "batch-ck-mh-2025-001",
+      "status": "retired",
+      "retiredByOrderId": "order-tata-01",
+      "createdAt": "2025-09-01T10:00:00.000Z"
+    },
+    {
+      "serialNumber": "IN-CCTS-2025-AGR-PB-200001",
+      "batchId": "batch-ck-pb-2025-002",
+      "status": "retired",
+      "retiredByOrderId": "order-mahindra-02",
+      "createdAt": "2025-10-01T11:00:00.000Z"
+    },
+    {
+      "serialNumber": "IN-CCTS-2025-AGR-GJ-300001",
+      "batchId": "batch-ck-gj-2025-003",
+      "status": "issued",
+      "createdAt": "2025-10-15T12:00:00.000Z"
+    },
+    {
+      "serialNumber": "IN-CCTS-2025-AGR-AP-400001",
+      "batchId": "batch-ck-ap-2025-004",
+      "status": "issued",
+      "createdAt": "2025-11-01T09:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-tata-01",
+      "factoryId": "buyer-01",
+      "companyName": "Tata Steel Limited (Scope-3 Decarbonization Desk)",
+      "batchId": "batch-ck-mh-2025-001",
+      "tonsRequested": 500,
+      "pricePerTonInrPaise": 180000,
+      "totalAmountInrPaise": 90000000,
+      "status": "paid",
+      "invoiceNumber": "INV-CK-2025-0081",
+      "gstRate": 18,
+      "createdAt": "2025-09-15T14:00:00.000Z"
+    },
+    {
+      "id": "order-mahindra-02",
+      "factoryId": "buyer-01",
+      "companyName": "Mahindra & Mahindra Farm Equipment Sector",
+      "batchId": "batch-ck-pb-2025-002",
+      "tonsRequested": 800,
+      "pricePerTonInrPaise": 195000,
+      "totalAmountInrPaise": 156000000,
+      "status": "paid",
+      "invoiceNumber": "INV-CK-2025-0104",
+      "gstRate": 18,
+      "createdAt": "2025-10-18T16:30:00.000Z"
+    },
+    {
+      "id": "order-infosys-03",
+      "factoryId": "buyer-01",
+      "companyName": "Infosys ESG Environmental Fund",
+      "batchId": "batch-ck-gj-2025-003",
+      "tonsRequested": 400,
+      "pricePerTonInrPaise": 220000,
+      "totalAmountInrPaise": 88000000,
+      "status": "paid",
+      "invoiceNumber": "INV-CK-2025-0122",
+      "gstRate": 18,
+      "createdAt": "2025-11-05T10:15:00.000Z"
+    },
+    {
+      "id": "order-jsw-04",
+      "factoryId": "buyer-01",
+      "companyName": "JSW Cement Green Supply Chain Initiative",
+      "batchId": "batch-ck-ap-2025-004",
+      "tonsRequested": 600,
+      "pricePerTonInrPaise": 185000,
+      "totalAmountInrPaise": 111000000,
+      "status": "paid",
+      "invoiceNumber": "INV-CK-2025-0145",
+      "gstRate": 18,
+      "createdAt": "2025-11-20T12:00:00.000Z"
+    }
+  ],
+  "payouts": [
+    {
+      "id": "pay-mh-01",
+      "farmerId": "farmer-mh-01",
+      "batchId": "batch-ck-mh-2025-001",
+      "stage": "signup",
+      "amountInrPaise": 245000,
+      "status": "paid",
+      "paidAt": "2025-06-25T10:00:00.000Z",
+      "createdAt": "2025-06-20T10:00:00.000Z"
+    },
+    {
+      "id": "pay-mh-02",
+      "farmerId": "farmer-mh-01",
+      "batchId": "batch-ck-mh-2025-001",
+      "stage": "mid_season",
+      "amountInrPaise": 490000,
+      "status": "paid",
+      "paidAt": "2025-08-20T12:00:00.000Z",
+      "createdAt": "2025-08-15T12:00:00.000Z"
+    },
+    {
+      "id": "pay-mh-03",
+      "farmerId": "farmer-mh-01",
+      "batchId": "batch-ck-mh-2025-001",
+      "stage": "final",
+      "amountInrPaise": 490000,
+      "status": "paid",
+      "paidAt": "2025-10-10T15:30:00.000Z",
+      "createdAt": "2025-10-05T15:30:00.000Z"
+    },
+    {
+      "id": "pay-pb-01",
+      "farmerId": "farmer-pb-02",
+      "batchId": "batch-ck-pb-2025-002",
+      "stage": "signup",
+      "amountInrPaise": 350000,
+      "status": "paid",
+      "paidAt": "2025-06-30T11:00:00.000Z",
+      "createdAt": "2025-06-25T11:00:00.000Z"
+    },
+    {
+      "id": "pay-pb-02",
+      "farmerId": "farmer-pb-02",
+      "batchId": "batch-ck-pb-2025-002",
+      "stage": "mid_season",
+      "amountInrPaise": 700000,
+      "status": "paid",
+      "paidAt": "2025-11-25T14:00:00.000Z",
+      "createdAt": "2025-11-22T14:00:00.000Z"
+    },
+    {
+      "id": "pay-pb-03",
+      "farmerId": "farmer-pb-02",
+      "batchId": "batch-ck-pb-2025-002",
+      "stage": "final",
+      "amountInrPaise": 700000,
+      "status": "paid",
+      "paidAt": "2026-01-15T10:00:00.000Z",
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "pay-gj-01",
+      "farmerId": "farmer-gj-03",
+      "batchId": "batch-ck-gj-2025-003",
+      "stage": "signup",
+      "amountInrPaise": 210000,
+      "status": "paid",
+      "paidAt": "2025-07-05T12:00:00.000Z",
+      "createdAt": "2025-07-01T12:00:00.000Z"
+    },
+    {
+      "id": "pay-gj-02",
+      "farmerId": "farmer-gj-03",
+      "batchId": "batch-ck-gj-2025-003",
+      "stage": "mid_season",
+      "amountInrPaise": 420000,
+      "status": "paid",
+      "paidAt": "2025-09-10T16:00:00.000Z",
+      "createdAt": "2025-09-05T16:00:00.000Z"
+    },
+    {
+      "id": "pay-gj-03",
+      "farmerId": "farmer-gj-03",
+      "batchId": "batch-ck-gj-2025-003",
+      "stage": "final",
+      "amountInrPaise": 420000,
+      "status": "paid",
+      "paidAt": "2025-11-15T14:30:00.000Z",
+      "createdAt": "2025-11-10T14:30:00.000Z"
+    },
+    {
+      "id": "pay-ap-01",
+      "farmerId": "farmer-ap-04",
+      "batchId": "batch-ck-ap-2025-004",
+      "stage": "signup",
+      "amountInrPaise": 300000,
+      "status": "paid",
+      "paidAt": "2025-07-10T10:00:00.000Z",
+      "createdAt": "2025-07-05T10:00:00.000Z"
+    },
+    {
+      "id": "pay-ap-02",
+      "farmerId": "farmer-ap-04",
+      "batchId": "batch-ck-ap-2025-004",
+      "stage": "mid_season",
+      "amountInrPaise": 600000,
+      "status": "paid",
+      "paidAt": "2025-10-05T11:00:00.000Z",
+      "createdAt": "2025-09-30T11:00:00.000Z"
+    },
+    {
+      "id": "pay-ap-03",
+      "farmerId": "farmer-ap-04",
+      "batchId": "batch-ck-ap-2025-004",
+      "stage": "final",
+      "amountInrPaise": 600000,
+      "status": "paid",
+      "paidAt": "2025-12-10T16:00:00.000Z",
+      "createdAt": "2025-12-05T16:00:00.000Z"
+    },
+    {
+      "id": "pay-tn-01",
+      "farmerId": "farmer-tn-05",
+      "stage": "signup",
+      "amountInrPaise": 228000,
+      "status": "paid",
+      "paidAt": "2025-07-15T14:00:00.000Z",
+      "createdAt": "2025-07-10T14:00:00.000Z"
+    },
+    {
+      "id": "pay-tn-02",
+      "farmerId": "farmer-tn-05",
+      "stage": "mid_season",
+      "amountInrPaise": 456000,
+      "status": "paid",
+      "paidAt": "2025-10-20T12:00:00.000Z",
+      "createdAt": "2025-10-15T12:00:00.000Z"
+    },
+    {
+      "id": "pay-up-01",
+      "farmerId": "farmer-up-06",
+      "stage": "signup",
+      "amountInrPaise": 268800,
+      "status": "paid",
+      "paidAt": "2025-07-20T11:00:00.000Z",
+      "createdAt": "2025-07-15T11:00:00.000Z"
+    },
+    {
+      "id": "pay-up-02",
+      "farmerId": "farmer-up-06",
+      "stage": "mid_season",
+      "amountInrPaise": 537600,
+      "status": "paid",
+      "paidAt": "2025-10-25T15:00:00.000Z",
+      "createdAt": "2025-10-20T15:00:00.000Z"
+    }
+  ],
+  "grievances": [
+    {
+      "id": "gr-01",
+      "userId": "user-pb-02",
+      "text": "SMS notification for 2nd installment DBT was received 24 hours after bank credit. Requesting timely notification.",
+      "status": "resolved",
+      "resolutionNote": "SMS gateway provider latency resolved. Transaction confirmed credited in PNB account on 25 Nov.",
+      "resolvedAt": "2025-11-27T10:00:00.000Z",
+      "createdAt": "2025-11-26T09:00:00.000Z"
+    },
+    {
+      "id": "gr-02",
+      "userId": "user-mh-01",
+      "text": "Need assistance with updated 7/12 land record upload for new adjacent survey number.",
+      "status": "resolved",
+      "resolutionNote": "FPO field coordinator visited Hiware village and verified physical document.",
+      "resolvedAt": "2025-07-02T16:00:00.000Z",
+      "createdAt": "2025-06-30T14:30:00.000Z"
+    }
+  ],
+  "consents": [
+    {
+      "id": "con-mh-01",
+      "farmerId": "farmer-mh-01",
+      "consentType": "data_usage",
+      "grantedAt": "2025-06-15T09:30:00.000Z",
+      "isAgentAssisted": true,
+      "language": "mr"
+    },
+    {
+      "id": "con-pb-02",
+      "farmerId": "farmer-pb-02",
+      "consentType": "data_usage",
+      "grantedAt": "2025-06-18T10:15:00.000Z",
+      "isAgentAssisted": true,
+      "language": "pa"
+    },
+    {
+      "id": "con-gj-03",
+      "farmerId": "farmer-gj-03",
+      "consentType": "data_usage",
+      "grantedAt": "2025-06-20T11:00:00.000Z",
+      "isAgentAssisted": true,
+      "language": "gu"
+    }
+  ],
+  "config": {
+    "farmerSplitPct": 70,
+    "platformSplitPct": 15,
+    "verificationSplitPct": 10,
+    "bufferSplitPct": 5,
+    "helplineNumber": "1800-227-266",
+    "cctsNote": "India Carbon Credit Trading Scheme (CCTS) Agricultural Registry protocol with verified plot cadastral mapping."
+  }
+}

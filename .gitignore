@@ -35,7 +35,8 @@ yarn-error.log*
 !.env.example
 
 # local mock database / session store
-.data/
+.data/*
+!.data/store.json
 
 # vercel
 .vercel

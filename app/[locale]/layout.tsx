@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, Locale } from "@/i18n/routing";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import VoiceAssistant from "@/components/VoiceAssistant";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -25,73 +26,74 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const t = await getTranslations({ locale });
 
   return (
     <html lang={locale} className="h-full">
-      <body className="min-h-full flex flex-col bg-[#F8FAF8] text-[#091910] font-sans antialiased">
+      <body className="min-h-full flex flex-col bg-[#FAFAF9] text-[#1C1917] font-sans antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           {/* Main Global Header */}
-          <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+          <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-xs border-b border-stone-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
               {/* Brand Logo */}
               <Link href={`/${locale}`} className="flex items-center gap-3 group">
-                <div className="w-10 h-10 rounded-xl bg-[#0c2e20] flex items-center justify-center text-emerald-400 shadow-sm group-hover:scale-105 transition-transform">
+                <div className="w-9 h-9 rounded-xl bg-stone-900 flex items-center justify-center text-white shadow-xs group-hover:scale-105 transition-transform">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                   </svg>
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-lg tracking-tight text-[#091910]">
-                      CarbonKheti
+                    <span className="font-bold text-base tracking-tight text-stone-900">
+                      {t("common.appName") || "CarbonKheti"}
                     </span>
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
                       CCTS Registry
                     </span>
                   </div>
                   <p className="text-[11px] text-stone-500 font-normal hidden sm:block">
-                    Verified Smallholder Carbon Exchange
+                    {t("common.tagline") || "Verified Smallholder Carbon Exchange"}
                   </p>
                 </div>
               </Link>
 
               {/* Main Nav Links */}
-              <nav className="hidden lg:flex items-center gap-1 font-medium text-sm text-stone-700">
+              <nav className="hidden lg:flex items-center gap-1 font-medium text-xs text-stone-700">
                 <Link
                   href={`/${locale}`}
-                  className="px-3 py-1.5 rounded-lg hover:text-[#0c2e20] hover:bg-stone-100 transition-colors"
+                  className="px-3 py-1.5 rounded-lg hover:text-black hover:bg-stone-100 transition-colors"
                 >
-                  Overview
+                  {t("nav.home") || "Overview"}
                 </Link>
                 <Link
                   href={`/${locale}/farmer`}
-                  className="px-3 py-1.5 rounded-lg hover:text-[#0c2e20] hover:bg-stone-100 transition-colors"
+                  className="px-3 py-1.5 rounded-lg hover:text-black hover:bg-stone-100 transition-colors"
                 >
-                  Farmer Passbook
+                  {t("nav.passbook") || "Farmer Passbook"}
                 </Link>
                 <Link
                   href={`/${locale}/agent`}
-                  className="px-3 py-1.5 rounded-lg hover:text-[#0c2e20] hover:bg-stone-100 transition-colors"
+                  className="px-3 py-1.5 rounded-lg hover:text-black hover:bg-stone-100 transition-colors"
                 >
-                  Field Operations
+                  {t("nav.practices") || "Field Operations"}
                 </Link>
                 <Link
                   href={`/${locale}/factory`}
-                  className="px-3 py-1.5 rounded-lg hover:text-[#0c2e20] hover:bg-stone-100 transition-colors"
+                  className="px-3 py-1.5 rounded-lg hover:text-black hover:bg-stone-100 transition-colors"
                 >
-                  Factory Marketplace
+                  {t("nav.marketplace") || "Factory Marketplace"}
                 </Link>
                 <Link
                   href={`/${locale}/registry`}
-                  className="px-3 py-1.5 rounded-lg hover:text-[#0c2e20] hover:bg-stone-100 transition-colors"
+                  className="px-3 py-1.5 rounded-lg hover:text-black hover:bg-stone-100 transition-colors"
                 >
-                  Public Ledger
+                  {t("nav.registry") || "Public Ledger"}
                 </Link>
                 <Link
                   href={`/${locale}/admin`}
-                  className="px-3 py-1.5 rounded-lg hover:text-[#0c2e20] hover:bg-stone-100 transition-colors text-xs font-semibold uppercase tracking-wider text-stone-500"
+                  className="px-3 py-1.5 rounded-lg hover:text-black hover:bg-stone-100 transition-colors text-xs font-semibold uppercase tracking-wider text-stone-500"
                 >
-                  MRV Audit
+                  {t("nav.admin") || "MRV Audit"}
                 </Link>
               </nav>
 
@@ -100,9 +102,29 @@ export default async function LocaleLayout({
                 <LanguageSwitcher currentLocale={locale} />
                 <Link
                   href={`/${locale}/login`}
-                  className="bg-[#0c2e20] hover:bg-[#134e35] text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-sm hover:shadow transition-all"
+                  className="bg-stone-900 hover:bg-black text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-xs transition-all"
                 >
-                  Sign In
+                  {locale === "hi"
+                    ? "लॉग इन"
+                    : locale === "pa"
+                    ? "ਲਾਗ ਇਨ"
+                    : locale === "mr"
+                    ? "लॉगिन"
+                    : locale === "gu"
+                    ? "લોગિન"
+                    : locale === "ta"
+                    ? "உள்நுழைக"
+                    : locale === "te"
+                    ? "లాగిన్"
+                    : locale === "kn"
+                    ? "ಲಾಗಿನ್"
+                    : locale === "bn"
+                    ? "লগইন"
+                    : locale === "od"
+                    ? "ଲଗଇନ୍"
+                    : locale === "ml"
+                    ? "ലോഗിൻ"
+                    : "Sign In"}
                 </Link>
               </div>
             </div>
@@ -118,7 +140,7 @@ export default async function LocaleLayout({
                 {/* Column 1: Brand */}
                 <div className="md:col-span-2 space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#0c2e20] flex items-center justify-center text-emerald-400">
+                    <div className="w-8 h-8 rounded-lg bg-stone-900 flex items-center justify-center text-white">
                       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                       </svg>
@@ -186,6 +208,7 @@ export default async function LocaleLayout({
               </div>
             </div>
           </footer>
+          <VoiceAssistant />
         </NextIntlClientProvider>
       </body>
     </html>

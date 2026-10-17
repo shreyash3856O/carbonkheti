@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import VoiceButton from "@/components/VoiceButton";
 
 export default function FarmerPortalPage() {
   const params = useParams();
@@ -149,7 +150,7 @@ export default function FarmerPortalPage() {
       {/* Top Profile / Passbook Header */}
       <div className="luxury-card rounded-2xl p-6 sm:p-8 mb-8 bg-white border border-stone-200 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 rounded-xl bg-[#0c2e20] text-emerald-400 flex items-center justify-center font-bold text-xl">
+          <div className="w-14 h-14 rounded-xl bg-stone-900 text-white flex items-center justify-center font-bold text-xl">
             <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
@@ -160,7 +161,7 @@ export default function FarmerPortalPage() {
                 {farmerData?.farmer ? farmerData.farmer.nameLocal : "Farmer Digital Passbook"}
               </h1>
               {farmerData?.farmer && (
-                <span className="badge-pill bg-emerald-50 text-emerald-800 border border-emerald-200">
+                <span className="badge-pill bg-stone-100 text-stone-800 border border-stone-200">
                   Verified Producer
                 </span>
               )}
@@ -204,7 +205,7 @@ export default function FarmerPortalPage() {
             onClick={() => setActiveTab(tab.id as any)}
             className={`px-5 py-3 text-xs font-bold transition-all border-b-2 ${
               activeTab === tab.id
-                ? "border-[#0c2e20] text-[#0c2e20]"
+                ? "border-stone-900 text-stone-900"
                 : "border-transparent text-stone-500 hover:text-stone-900"
             }`}
           >
@@ -226,7 +227,7 @@ export default function FarmerPortalPage() {
           </p>
           <Link
             href={`/${locale}/agent`}
-            className="inline-flex items-center gap-2 bg-[#0c2e20] text-white text-xs font-semibold px-4 py-2.5 rounded-lg"
+            className="inline-flex items-center gap-2 bg-stone-900 hover:bg-black text-white text-xs font-semibold px-4 py-2.5 rounded-lg"
           >
             <span>Onboard New Farmer</span>
             <span>→</span>
@@ -236,21 +237,24 @@ export default function FarmerPortalPage() {
         <>
           {activeTab === "passbook" && (
             <div className="space-y-8">
-              {/* Voice Readout Bar */}
-              <div className="flex justify-end">
-                <button
-                  onClick={() =>
-                    speakText(
-                      `Namaste ${farmerData.farmer.nameLocal}. Your total earned is ${farmerData.passbook.totalEarnedInr} rupees. Estimated carbon credits are ${farmerData.passbook.estimatedTons} tons.`
-                    )
-                  }
-                  className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 px-3.5 py-2 rounded-lg transition-colors border border-emerald-200"
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                  </svg>
-                  <span>Read aloud (आवाज में सुनें)</span>
-                </button>
+              {/* Voice Readout Banner */}
+              <div className="bg-stone-100 rounded-2xl p-4 border border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🎙️</span>
+                  <div>
+                    <div className="text-xs font-bold text-stone-900">
+                      पासबुक का हिसाब बोलकर सुनें (Audio Passbook)
+                    </div>
+                    <div className="text-[11px] text-stone-600">
+                      बैलेंस, आगामी किस्त और कार्बन पैदावार की पूरी जानकारी
+                    </div>
+                  </div>
+                </div>
+                <VoiceButton
+                  textToSpeak={`नमस्ते ${farmerData.farmer.nameLocal} जी। आपके खाते में अब तक कुल ₹${farmerData.passbook.totalEarnedInr} जमा हो चुके हैं। आपकी ${farmerData.passbook.totalAcres} एकड़ जमीन से कुल ${farmerData.passbook.estimatedTons} टन कार्बन क्रेडिट बने हैं। आपकी अगली किस्त ₹${farmerData.passbook.pendingPayoutsInr} ऑडिट के बाद सीधे बैंक में आ जाएगी।`}
+                  label="पूरा हिसाब बोलकर सुनें 🔊"
+                  className="bg-stone-900 hover:bg-black text-white font-bold px-4 py-2 text-xs shadow-xs cursor-pointer"
+                />
               </div>
 
               {/* Financial Summary Cards */}
@@ -259,11 +263,11 @@ export default function FarmerPortalPage() {
                   <div className="text-xs font-bold uppercase tracking-wider text-stone-500 mb-2">
                     Total Disbursed (कुल भुगतान)
                   </div>
-                  <div className="text-4xl font-bold font-mono text-emerald-800">
+                  <div className="text-4xl font-bold font-mono text-stone-900">
                     ₹{farmerData.passbook.totalEarnedInr.toLocaleString("en-IN")}
                   </div>
                   <div className="mt-3 text-xs text-stone-500 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-stone-900" />
                     <span>Direct DBT / UPI Credit</span>
                   </div>
                 </div>
@@ -320,7 +324,7 @@ export default function FarmerPortalPage() {
                     <div key={idx} className="p-5 rounded-xl bg-stone-50 border border-stone-200 space-y-2">
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-mono font-bold text-stone-500">0{idx + 1}</span>
-                        <span className="badge-pill bg-emerald-100 text-emerald-800">
+                        <span className="badge-pill bg-stone-200 text-stone-800">
                           {s.status}
                         </span>
                       </div>
@@ -385,7 +389,7 @@ export default function FarmerPortalPage() {
                   <div key={pr.id} className="luxury-card rounded-2xl p-6 bg-white border border-stone-200 space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="badge-pill bg-stone-100 text-stone-700">{pr.seasonLabel}</span>
-                      <span className="badge-pill bg-emerald-100 text-emerald-800">
+                      <span className="badge-pill bg-stone-200 text-stone-800">
                         Additionality Verified
                       </span>
                     </div>
@@ -400,7 +404,7 @@ export default function FarmerPortalPage() {
                         setEvidencePracticeId(pr.id);
                         setActiveTab("evidence");
                       }}
-                      className="text-xs font-bold text-emerald-800 hover:underline pt-2 block"
+                      className="text-xs font-bold text-stone-900 hover:underline pt-2 block"
                     >
                       Upload Ground Evidence Photo →
                     </button>
@@ -420,7 +424,7 @@ export default function FarmerPortalPage() {
                 <div
                   className={`p-3.5 rounded-xl text-xs font-semibold ${
                     evidenceMessage.type === "success"
-                      ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+                      ? "bg-stone-100 text-stone-900 border border-stone-300"
                       : "bg-red-50 text-red-800 border border-red-200"
                   }`}
                 >
@@ -473,7 +477,7 @@ export default function FarmerPortalPage() {
                 <button
                   type="submit"
                   disabled={uploadingEvidence}
-                  className="w-full bg-[#0c2e20] hover:bg-[#134e35] text-white text-xs font-semibold py-3 rounded-lg disabled:opacity-50 transition-all"
+                  className="w-full bg-stone-900 hover:bg-black text-white text-xs font-semibold py-3 rounded-lg disabled:opacity-50 transition-all cursor-pointer"
                 >
                   {uploadingEvidence ? "Hashing & Submitting..." : "Submit to Verification Queue"}
                 </button>
@@ -507,7 +511,7 @@ export default function FarmerPortalPage() {
                   <button
                     type="submit"
                     disabled={submittingGrievance}
-                    className="w-full bg-[#0c2e20] text-white text-xs font-semibold py-2.5 rounded-lg"
+                    className="w-full bg-stone-900 hover:bg-black text-white text-xs font-semibold py-2.5 rounded-lg cursor-pointer"
                   >
                     {submittingGrievance ? "Registering..." : "Submit Ticket"}
                   </button>

@@ -67,9 +67,9 @@ export default function DynamicMethodologyExplorer() {
             <button
               key={idx}
               onClick={() => setSelectedPractice(idx)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                 selectedPractice === idx
-                  ? "bg-[#0c2e20] text-white shadow-sm"
+                  ? "bg-stone-900 text-white shadow-xs"
                   : "text-stone-600 hover:text-stone-900"
               }`}
             >
@@ -83,10 +83,10 @@ export default function DynamicMethodologyExplorer() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         <div className="lg:col-span-8 space-y-5">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="badge-pill bg-emerald-50 text-emerald-900 border border-emerald-200">
+            <span className="badge-pill bg-stone-100 text-stone-800 border border-stone-200">
               {current.category}
             </span>
-            <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100/60 px-2.5 py-0.5 rounded">
+            <span className="text-xs font-mono font-bold text-stone-900 bg-stone-100 px-2.5 py-0.5 rounded border border-stone-200">
               {current.abatementFactor}
             </span>
           </div>
@@ -99,7 +99,7 @@ export default function DynamicMethodologyExplorer() {
             <div className="text-xs font-bold uppercase tracking-wider text-stone-500">
               Biogeochemical Mechanism
             </div>
-            <p className="text-xs sm:text-sm text-stone-700 leading-relaxed bg-stone-50 p-4 rounded-2xl border border-stone-200">
+            <p className="text-xs sm:text-sm text-stone-700 leading-relaxed bg-stone-50 p-4 rounded-xl border border-stone-200">
               {current.mechanism}
             </p>
           </div>
@@ -126,20 +126,20 @@ export default function DynamicMethodologyExplorer() {
         </div>
 
         {/* Co-benefits column */}
-        <div className="lg:col-span-4 bg-emerald-950 text-white rounded-2xl p-6 space-y-4">
-          <div className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+        <div className="lg:col-span-4 bg-stone-900 text-white rounded-2xl p-6 space-y-4">
+          <div className="text-xs font-bold uppercase tracking-wider text-stone-300">
             Ecosystem Co-Benefits
           </div>
           <div className="space-y-2.5 text-xs">
             {current.coBenefits.map((b, i) => (
               <div key={i} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                 <span>{b}</span>
               </div>
             ))}
           </div>
 
-          <div className="pt-4 border-t border-emerald-900 text-[11px] text-stone-300">
+          <div className="pt-4 border-t border-stone-800 text-[11px] text-stone-400">
             Eligible for premium biodiversity and water conservation pricing under India CCTS framework.
           </div>
         </div>

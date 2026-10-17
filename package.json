@@ -23,6 +23,7 @@
     "bcryptjs": "^3.0.3",
     "drizzle-orm": "^0.45.4",
     "drizzle-zod": "^0.8.3",
+    "groq-sdk": "^1.6.0",
     "idb": "^8.0.4",
     "leaflet": "^1.9.4",
     "next": "16.4.2",
